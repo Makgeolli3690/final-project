@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions</title>
+    <style>
+        body {font-family: 'Times New Roman', Times, serif;}
+* {box-sizing: content-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 1px;
+  box-sizing: content-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+input[type=email], select, textarea{
+    width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 1px;
+  box-sizing: content-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+          <label for="suggestions">Share your story!</label>
+          <textarea id="suggestions" name="Congratulate DRX" placeholder="Share your favorite LOL story!" style="height:100px"></textarea>
+
+          
+
+          <input type="submit" value="Submit">
+      
+        </form>
+        <iframe name="cgi-results" id="cgi-results"></iframe>
+      </div>
+</body>
+</html>

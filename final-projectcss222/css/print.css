@@ -1,0 +1,21 @@
+@media print and (max-width: 8.5in) and (max-height: 11in){
+    img {
+        max-width: 250px;
+      }
+    
+      @page {
+        margin: 1in;
+      }
+
+    body{
+      background: none;
+      color:rgb(41, 52, 113);
+      box-shadow: 0in;
+    }
+  }
+  .nav, footer, iframe,.video , br, .back{
+      display: none;
+  }
+  .schedule{
+      page-break-before: always;
+  }
